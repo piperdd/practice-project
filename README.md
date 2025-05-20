@@ -46,3 +46,4 @@ php artisan make:controller NameController --resource
 - Components?
 - Migration for DB
 - Seeders for DB
+- Data Validation
