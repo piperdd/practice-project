@@ -20,7 +20,7 @@ app/
 |       └── CustomController.php
 ├── resources/
 |  └── views/
-|       ├── custom/     -- for controller
+|       ├── custom/     -- corresponds to controller
 |       |   ├── index.blade.php
 |       |   ├── edit.blade.php
 |       |   └── ...
