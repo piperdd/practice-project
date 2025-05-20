@@ -4,15 +4,14 @@ This is a practice web app for laravel.
 
 ## Learning Goals
 - Model-View-Controller Architecture
+- Model
 - View
 - Controller
 - Routes
 - Database
 
-
-
-## Learning Progress
-**Basic structure in a Laravel App (will add as I learn)**
+## Learning Progress (will add as I learn)
+**Basic structure in a Laravel App**
 ```
 app/
 ├── Http/
@@ -31,6 +30,7 @@ app/
     └── web.php     -- routing for web urls
 ```
 **Artisan Commands**
+
 Making new controller:
 ```bash
 php artisan make:controller NameController
@@ -42,4 +42,7 @@ php artisan make:controller NameController --resource
 
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
-- 
+- Models (what they are and how it is integrated)
+- Components?
+- Migration for DB
+- Seeders for DB
