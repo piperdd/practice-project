@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StudentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,7 +12,7 @@ Route::get('/', function () {
 // });
 Route::view('/page1','page1'); //same as above (can pass params too)
 
-
+Route::get('/studentTypes', [StudentController::class,'index'])->name('student.index');
 /* 
 Route::get
 Route::post
