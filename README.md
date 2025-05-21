@@ -32,9 +32,13 @@ database/
 │   └── Table1Seeder.php
 resources/
 ├── views/
-│   ├── custom/     -- corresponds to controller
-│   │   ├── index.blade.php
-│   │   ├── edit.blade.php
+│   ├── Pet/     -- corresponds to controller   -- some pages might not be required
+│   │   ├── index.blade.php     -- display all data in table
+│   │   ├── create.blade.php    -- create new entry
+│   │   ├── show.blade.php      -- display single entry
+│   │   ├── edit.blade.php      -- get exisiting entry for editting
+│   │   ├── update.blade.php    -- publishes editted entry for updating
+│   │   ├── destroy.blade.php   -- removes an entry
 │   │   └── ...
 │   ├── page1.blade.php     -- for normal pages
 │   └── welcome.blade.php   -- main page
@@ -51,6 +55,8 @@ For resource controller:
 ```bash
 php artisan make:controller NameController --resource
 ```
+this includes methods for index, create, store, show, edit, update, destroy.
+
 Making new table:
 ```bash
 php artisan make:migration create_name1_table
@@ -59,7 +65,7 @@ Making new model:
 ```bash
 php artisan make:model LoremIpsum
 ```
-add `-m` flag to make table migration and `-c` flag to make controller (not every model needs controller)
+add `-m` flag to make table migration and `-c` flag to make controller (recommended to make model with both?)
 
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
@@ -71,3 +77,7 @@ add `-m` flag to make table migration and `-c` flag to make controller (not ever
 
 Will try to implement this DB structure
 ![database diagram](/images/image.png)
+
+## TODO
+- Add controller for pet table
+- Try without controller fo breed/species?
