@@ -55,4 +55,4 @@ php artisan make:controller NameController --resource
 - Seeders for DB
 - Data Validation
 
-[database diagram](/images/image.png)
+![database diagram](/images/image.png)
