@@ -81,3 +81,5 @@ Will try to implement this DB structure
 ## TODO
 - Add controller for pet table
 - Try without controller fo breed/species?
+- user can add breed for a species
+- Seed species DB
