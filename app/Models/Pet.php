@@ -8,4 +8,5 @@ class Pet extends Model
 {
     //
     protected $table = "pets";
+    protected $fillable = ["name","species_id"];
 }

@@ -8,4 +8,5 @@ class Breed extends Model
 {
     //
     protected $table = "breed";
+    protected $fillable = ['name'];
 }
