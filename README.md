@@ -67,6 +67,11 @@ php artisan make:model LoremIpsum
 ```
 add `-m` flag to make table migration and `-c` flag to make controller (recommended to make model with both?)
 
+Making new seeder:
+```
+php artisan make:seeder LoremSeeder
+```
+
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
 - Models (what they are and how it is integrated)
