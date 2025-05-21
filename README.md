@@ -5,6 +5,7 @@ This is a practice web app for laravel.
 ## Learning Goals
 - Model-View-Controller Architecture
 - Model
+    - Class that represents a single table in DB, and provides methods for interacting with table
 - View
 - Controller
 - Routes
@@ -17,11 +18,15 @@ app/
 ├── Http/
 │   └── Controllers/
 │       ├── Controller.php
-│       └── CustomController.php
+│       └── PetController.php
+├── Models/
+│   ├── Pet.php
+│   ├── Species.php
+│   └── Breed.php
 database/
 ├── migrations/
 │   ├── migration1.php
-│   └── migration2.php
+│   └── migration2.php      --create_table_...
 ├── seeders/
 │   ├── DatabaseSeeder.php
 │   └── Table1Seeder.php
@@ -50,6 +55,11 @@ Making new table:
 ```bash
 php artisan make:migration create_name1_table
 ```
+Making new model:
+```bash
+php artisan make:model LoremIpsum
+```
+add `-m` flag to make table migration and `-c` flag to make controller (not every model needs controller)
 
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
