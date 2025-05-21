@@ -46,6 +46,10 @@ For resource controller:
 ```bash
 php artisan make:controller NameController --resource
 ```
+Making new table:
+```bash
+php artisan make:migration create_name1_table
+```
 
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
@@ -55,4 +59,5 @@ php artisan make:controller NameController --resource
 - Seeders for DB
 - Data Validation
 
+Will try to implement this DB structure
 ![database diagram](/images/image.png)
