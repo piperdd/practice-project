@@ -15,19 +15,26 @@ This is a practice web app for laravel.
 ```
 app/
 ├── Http/
-|   └── Controllers/
-|       ├── Controller.php
-|       └── CustomController.php
-├── resources/
-|  └── views/
-|       ├── custom/     -- corresponds to controller
-|       |   ├── index.blade.php
-|       |   ├── edit.blade.php
-|       |   └── ...
-|       ├── page1.blade.php     -- for normal pages
-|       └── welcome.blade.php   -- main page
-└── routes/
-    └── web.php     -- routing for web urls
+│   └── Controllers/
+│       ├── Controller.php
+│       └── CustomController.php
+database/
+├── migrations/
+│   ├── migration1.php
+│   └── migration2.php
+├── seeders/
+│   ├── DatabaseSeeder.php
+│   └── Table1Seeder.php
+resources/
+├── views/
+│   ├── custom/     -- corresponds to controller
+│   │   ├── index.blade.php
+│   │   ├── edit.blade.php
+│   │   └── ...
+│   ├── page1.blade.php     -- for normal pages
+│   └── welcome.blade.php   -- main page
+routes/
+└── web.php     -- routing for web urls
 ```
 **Artisan Commands**
 
@@ -47,3 +54,5 @@ php artisan make:controller NameController --resource
 - Migration for DB
 - Seeders for DB
 - Data Validation
+
+[database diagram](/images/image.png)
