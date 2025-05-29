@@ -71,6 +71,10 @@ Making new seeder:
 ```
 php artisan make:seeder LoremSeeder
 ```
+Migrate from start and seed:
+```
+php artisan migrate:fresh --seed
+```
 
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
