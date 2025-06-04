@@ -75,6 +75,14 @@ Migrate from start and seed:
 ```
 php artisan migrate:fresh --seed
 ```
+Making new MVC:
+```
+php artisan make:model SystemSetting -m
+```
+```
+php artisan make:controller SystemSettingController --resource
+```
+
 
 ## Next Goal
 - [Resource Controller for DB](https://youtu.be/0M84Nk7iWkA?si=BVJqPeDt_IebvEuP&t=4983)
